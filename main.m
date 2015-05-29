@@ -1,4 +1,4 @@
-function []=main(dir_name)
+function []=main(dataset_dir,tdoa_table_dir)
 % Input: dir_name (in which there are TDOA_table.mat, cartCoords.mat,
 %        inverse_map.mat, micPair_min_max_table.mat,
 %        TDOA_table_SSC.mat, SSC_centroids.mat, SSC.mat,
@@ -25,7 +25,7 @@ function []=main(dir_name)
 tolerance.theta= 10.001;  % degree
 tolerance.phi= 5.001;     % degree
 
-SSL_1_full_search(dir_name,tolerance)
-SSL_2_inverse_map_run(dir_name,tolerance)
-SSL_3_SSC(dir_name,tolerance)
-SSL_4_SSC2_run(dir_name,tolerance)
+SSL_1_full_search(dataset_dir,tdoa_table_dir,tolerance)
+SSL_2_inverse_map_run(dataset_dir,tdoa_table_dir,tolerance)
+SSL_3_SSC(dataset_dir,tdoa_table_dir,tolerance)
+SSL_4_SSC2_run(dataset_dir,tdoa_table_dir,tolerance)
