@@ -1,4 +1,4 @@
-function []=SSL_4_SSC2_run(dir_name,tolerance)
+function []=SSL_4_SSC2_run(dataset_dir,tdoa_table_dir,tolerance)
 % Release date: May 2015
 % Author: Taewoo Lee, (twlee@speech.korea.ac.kr)
 %
@@ -18,5 +18,5 @@ function []=SSL_4_SSC2_run(dir_name,tolerance)
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 for nn=[128 64 32 16 8 4 2 1]
-    SSL_4_SSC2(dir_name,nn,tolerance);
+    SSL_4_SSC2(dataset_dir,tdoa_table_dir,nn,tolerance);
 end
