@@ -1,4 +1,4 @@
-function []=SSL_1_full_search(dir_name,tolerance)
+function []=SSL_1_full_search(dataset_dir,tdoa_table_dir,tolerance)
 % Input: cartCoords.mat, TDOA_table.mat, ~/VADed_data.mat
 % Output: ./log/full_search.txt
 %
@@ -29,10 +29,10 @@ function []=SSL_1_full_search(dir_name,tolerance)
 DEBUG= 1;
 error_tolerance= tolerance.theta;    %degree
 error_tolerance_phi= tolerance.phi;  %degree
-load([dir_name '/cartCoords.mat']);
-load([dir_name '/TDOA_table.mat']);
+load([tdoa_table_dir '/cartCoords.mat']);
+load([tdoa_table_dir '/TDOA_table.mat']);
 TDOA_table= TDOA_table'; % For improving memory access pattern.
-filelist= ld_vadlist();
+filelist= ld_vadlist(dataset_dir);
 nfile= size(filelist,1);
 
 diary('off');
