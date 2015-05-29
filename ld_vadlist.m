@@ -1,3 +1,4 @@
+function [filelist]=ld_vadlist(dataset_dir)
 % Release date: May 2015
 % Author: Taewoo Lee, (twlee@speech.korea.ac.kr)
 %
@@ -16,52 +17,50 @@
 % You should have received a copy of the GNU General Public License
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-function [filelist]=ld_vadlist()
-
 %90
-filelist(1,:)={'../TL-SSC_simul_data/090/1m/170cm/reverb020/out00.wav'};
-filelist(2,:)={'../TL-SSC_simul_data/090/1m/170cm/reverb300/out00.wav'};
-filelist(3,:)={'../TL-SSC_simul_data/090/1m/170cm/reverb500/out00.wav'};
-filelist(4,:)={'../TL-SSC_simul_data/090/1m/170cm/reverb700/out00.wav'};
-filelist(5,:)={'../TL-SSC_simul_data/090/1m/170cm/reverb900/out00.wav'};
-filelist(6,:)={'../TL-SSC_simul_data/090/2m/170cm/reverb020/out00.wav'};
-filelist(7,:)={'../TL-SSC_simul_data/090/2m/170cm/reverb300/out00.wav'};
-filelist(8,:)={'../TL-SSC_simul_data/090/2m/170cm/reverb500/out00.wav'};
-filelist(9,:)={'../TL-SSC_simul_data/090/2m/170cm/reverb700/out00.wav'};
-filelist(10,:)={'../TL-SSC_simul_data/090/2m/170cm/reverb900/out00.wav'};
+filelist(1,:)={[dataset_dir '/090/1m/170cm/reverb020/out00.wav']};
+filelist(2,:)={[dataset_dir '/090/1m/170cm/reverb300/out00.wav']};
+filelist(3,:)={[dataset_dir '/090/1m/170cm/reverb500/out00.wav']};
+filelist(4,:)={[dataset_dir '/090/1m/170cm/reverb700/out00.wav']};
+filelist(5,:)={[dataset_dir '/090/1m/170cm/reverb900/out00.wav']};
+filelist(6,:)={[dataset_dir '/090/2m/170cm/reverb020/out00.wav']};
+filelist(7,:)={[dataset_dir '/090/2m/170cm/reverb300/out00.wav']};
+filelist(8,:)={[dataset_dir '/090/2m/170cm/reverb500/out00.wav']};
+filelist(9,:)={[dataset_dir '/090/2m/170cm/reverb700/out00.wav']};
+filelist(10,:)={[dataset_dir '/090/2m/170cm/reverb900/out00.wav']};
 
 %120
-filelist(11,:)={'../TL-SSC_simul_data/120/1m/170cm/reverb020/out00.wav'};
-filelist(12,:)={'../TL-SSC_simul_data/120/1m/170cm/reverb300/out00.wav'};
-filelist(13,:)={'../TL-SSC_simul_data/120/1m/170cm/reverb500/out00.wav'};
-filelist(14,:)={'../TL-SSC_simul_data/120/1m/170cm/reverb700/out00.wav'};
-filelist(15,:)={'../TL-SSC_simul_data/120/1m/170cm/reverb900/out00.wav'};
-filelist(16,:)={'../TL-SSC_simul_data/120/2m/170cm/reverb020/out00.wav'};
-filelist(17,:)={'../TL-SSC_simul_data/120/2m/170cm/reverb300/out00.wav'};
-filelist(18,:)={'../TL-SSC_simul_data/120/2m/170cm/reverb500/out00.wav'};
-filelist(19,:)={'../TL-SSC_simul_data/120/2m/170cm/reverb700/out00.wav'};
-filelist(20,:)={'../TL-SSC_simul_data/120/2m/170cm/reverb900/out00.wav'};
+filelist(11,:)={[dataset_dir '/120/1m/170cm/reverb020/out00.wav']};
+filelist(12,:)={[dataset_dir '/120/1m/170cm/reverb300/out00.wav']};
+filelist(13,:)={[dataset_dir '/120/1m/170cm/reverb500/out00.wav']};
+filelist(14,:)={[dataset_dir '/120/1m/170cm/reverb700/out00.wav']};
+filelist(15,:)={[dataset_dir '/120/1m/170cm/reverb900/out00.wav']};
+filelist(16,:)={[dataset_dir '/120/2m/170cm/reverb020/out00.wav']};
+filelist(17,:)={[dataset_dir '/120/2m/170cm/reverb300/out00.wav']};
+filelist(18,:)={[dataset_dir '/120/2m/170cm/reverb500/out00.wav']};
+filelist(19,:)={[dataset_dir '/120/2m/170cm/reverb700/out00.wav']};
+filelist(20,:)={[dataset_dir '/120/2m/170cm/reverb900/out00.wav']};
 
 %150
-filelist(21,:)={'../TL-SSC_simul_data/150/1m/170cm/reverb020/out00.wav'};
-filelist(22,:)={'../TL-SSC_simul_data/150/1m/170cm/reverb300/out00.wav'};
-filelist(23,:)={'../TL-SSC_simul_data/150/1m/170cm/reverb500/out00.wav'};
-filelist(24,:)={'../TL-SSC_simul_data/150/1m/170cm/reverb700/out00.wav'};
-filelist(25,:)={'../TL-SSC_simul_data/150/1m/170cm/reverb900/out00.wav'};
-filelist(26,:)={'../TL-SSC_simul_data/150/2m/170cm/reverb020/out00.wav'};
-filelist(27,:)={'../TL-SSC_simul_data/150/2m/170cm/reverb300/out00.wav'};
-filelist(28,:)={'../TL-SSC_simul_data/150/2m/170cm/reverb500/out00.wav'};
-filelist(29,:)={'../TL-SSC_simul_data/150/2m/170cm/reverb700/out00.wav'};
-filelist(30,:)={'../TL-SSC_simul_data/150/2m/170cm/reverb900/out00.wav'};
+filelist(21,:)={[dataset_dir '/150/1m/170cm/reverb020/out00.wav']};
+filelist(22,:)={[dataset_dir '/150/1m/170cm/reverb300/out00.wav']};
+filelist(23,:)={[dataset_dir '/150/1m/170cm/reverb500/out00.wav']};
+filelist(24,:)={[dataset_dir '/150/1m/170cm/reverb700/out00.wav']};
+filelist(25,:)={[dataset_dir '/150/1m/170cm/reverb900/out00.wav']};
+filelist(26,:)={[dataset_dir '/150/2m/170cm/reverb020/out00.wav']};
+filelist(27,:)={[dataset_dir '/150/2m/170cm/reverb300/out00.wav']};
+filelist(28,:)={[dataset_dir '/150/2m/170cm/reverb500/out00.wav']};
+filelist(29,:)={[dataset_dir '/150/2m/170cm/reverb700/out00.wav']};
+filelist(30,:)={[dataset_dir '/150/2m/170cm/reverb900/out00.wav']};
 
 %180
-filelist(31,:)={'../TL-SSC_simul_data/180/1m/170cm/reverb020/out00.wav'};
-filelist(32,:)={'../TL-SSC_simul_data/180/1m/170cm/reverb300/out00.wav'};
-filelist(33,:)={'../TL-SSC_simul_data/180/1m/170cm/reverb500/out00.wav'};
-filelist(34,:)={'../TL-SSC_simul_data/180/1m/170cm/reverb700/out00.wav'};
-filelist(35,:)={'../TL-SSC_simul_data/180/1m/170cm/reverb900/out00.wav'};
-filelist(36,:)={'../TL-SSC_simul_data/180/2m/170cm/reverb020/out00.wav'};
-filelist(37,:)={'../TL-SSC_simul_data/180/2m/170cm/reverb300/out00.wav'};
-filelist(38,:)={'../TL-SSC_simul_data/180/2m/170cm/reverb500/out00.wav'};
-filelist(39,:)={'../TL-SSC_simul_data/180/2m/170cm/reverb700/out00.wav'};
-filelist(40,:)={'../TL-SSC_simul_data/180/2m/170cm/reverb900/out00.wav'};
+filelist(31,:)={[dataset_dir '/180/1m/170cm/reverb020/out00.wav']};
+filelist(32,:)={[dataset_dir '/180/1m/170cm/reverb300/out00.wav']};
+filelist(33,:)={[dataset_dir '/180/1m/170cm/reverb500/out00.wav']};
+filelist(34,:)={[dataset_dir '/180/1m/170cm/reverb700/out00.wav']};
+filelist(35,:)={[dataset_dir '/180/1m/170cm/reverb900/out00.wav']};
+filelist(36,:)={[dataset_dir '/180/2m/170cm/reverb020/out00.wav']};
+filelist(37,:)={[dataset_dir '/180/2m/170cm/reverb300/out00.wav']};
+filelist(38,:)={[dataset_dir '/180/2m/170cm/reverb500/out00.wav']};
+filelist(39,:)={[dataset_dir '/180/2m/170cm/reverb700/out00.wav']};
+filelist(40,:)={[dataset_dir '/180/2m/170cm/reverb900/out00.wav']};
