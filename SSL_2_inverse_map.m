@@ -1,4 +1,4 @@
-function []=SSL_2_inverse_map(dir_name,pp,tolerance)
+function []=SSL_2_inverse_map(dataset_dir,tdoa_table_dir,pp,tolerance)
 % Input: cartCoords.mat, 
 %        inverse_map.mat, 
 %        micPair_min_max_table.mat, 
@@ -32,11 +32,11 @@ function []=SSL_2_inverse_map(dir_name,pp,tolerance)
 DEBUG= 1;
 error_tolerance= tolerance.theta;    % degree
 error_tolerance_phi= tolerance.phi;  % degree
-load([dir_name '/cartCoords.mat']); 
-load([dir_name '/inverse_map.mat']);
-load([dir_name '/micPair_min_max_table.mat']);
+load([tdoa_table_dir '/cartCoords.mat']); 
+load([tdoa_table_dir '/inverse_map.mat']);
+load([tdoa_table_dir '/micPair_min_max_table.mat']);
 
-filelist= ld_vadlist();
+filelist= ld_vadlist(dataset_dir);
 nfile= size(filelist,1);
 
 diary('off');
