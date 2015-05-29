@@ -1,4 +1,4 @@
-function []=SSL_3_SSC(dir_name,tolerance)
+function []=SSL_3_SSC(dataset_dir,tdoa_table_dir,tolerance)
 % Input: cartCoords.mat, 
 %        TDOA_table_SSC.mat, 
 %        SSC_centroids.mat
@@ -32,11 +32,11 @@ function []=SSL_3_SSC(dir_name,tolerance)
 DEBUG= 1;
 error_tolerance= tolerance.theta;    % degree
 error_tolerance_phi= tolerance.phi;  % degree
-load([dir_name '/cartCoords.mat']);
-load([dir_name '/TDOA_table_SSC.mat']);
+load([tdoa_table_dir '/cartCoords.mat']);
+load([tdoa_table_dir '/TDOA_table_SSC.mat']);
 TDOA_table_SSC= TDOA_table_SSC';
-load([dir_name '/SSC_centroids.mat']);
-filelist= ld_vadlist();
+load([tdoa_table_dir '/SSC_centroids.mat']);
+filelist= ld_vadlist(dataset_dir);
 nfile= size(filelist,1);
 
 diary('off');
