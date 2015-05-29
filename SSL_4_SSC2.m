@@ -1,4 +1,4 @@
-function []=SSL_4_SSC2(dir_name,nn,tolerance)
+function []=SSL_4_SSC2(dataset_dir,tdoa_table_dir,nn,tolerance)
 % Input:  TDOA_table_SSC.mat
 %         TDOA_table_SSC2.mat
 %         SSC2.mat
@@ -31,13 +31,13 @@ function []=SSL_4_SSC2(dir_name,nn,tolerance)
 DEBUG= 1;
 error_tolerance= tolerance.theta;    % degree
 error_tolerance_phi= tolerance.phi;  % degree
-load([dir_name '/SSC2.mat']); 
-load([dir_name '/TDOA_table_SSC.mat']);
+load([tdoa_table_dir '/SSC2.mat']); 
+load([tdoa_table_dir '/TDOA_table_SSC.mat']);
 TDOA_table_SSC= TDOA_table_SSC';
-load([dir_name '/TDOA_table_SSC2.mat']);
+load([tdoa_table_dir '/TDOA_table_SSC2.mat']);
 TDOA_table_SSC2= TDOA_table_SSC2';
-load([dir_name '/SSC_centroids.mat']);
-filelist= ld_vadlist();
+load([tdoa_table_dir '/SSC_centroids.mat']);
+filelist= ld_vadlist(dataset_dir);
 nfile= size(filelist,1);
 
 diary('off');
