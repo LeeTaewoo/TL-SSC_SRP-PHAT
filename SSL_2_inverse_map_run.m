@@ -1,4 +1,4 @@
-function []=SSL_2_inverse_map_run(dir_name,tolerance)
+function []=SSL_2_inverse_map_run(dataset_dir,tdoa_table_dir,tolerance)
 % Release date: May 2015
 % Author: Taewoo Lee, (twlee@speech.korea.ac.kr)
 %
@@ -18,5 +18,5 @@ function []=SSL_2_inverse_map_run(dir_name,tolerance)
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 for pp=[128 64 32 16 8 4 2 1 0]
-    SSL_2_inverse_map(dir_name,pp,tolerance);
+    SSL_2_inverse_map(dataset_dir,tdoa_table_dir,pp,tolerance);
 end
