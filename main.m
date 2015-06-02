@@ -1,6 +1,7 @@
 function []=main(dataset_dir,tdoa_table_dir)
-% Input: dir_name (in which there are TDOA_table.mat, cartCoords.mat,
-%        inverse_map.mat, micPair_min_max_table.mat,
+% Input: dataset_dir,
+%        tdoa_table_dir (in which there are TDOA_table.mat, 
+%        cartCoords.mat, inverse_map.mat, micPair_min_max_table.mat,
 %        TDOA_table_SSC.mat, SSC_centroids.mat, SSC.mat,
 %        TDOA_table_SSC2.mat, SSC2_centroids.mat, SSC2.mat.)
 %
